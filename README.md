@@ -7,6 +7,10 @@ Medal saved and renders it for you with [ffmpeg](https://ffmpeg.org), outside of
 > **Unofficial.** Not made by or affiliated with Medal. "Medal" is a trademark of its
 > owner. It only reads files on your own computer. Use it for your own clips.
 
+> **Made with AI.** The code and this README were written by
+> [Claude](https://claude.ai) (Claude Sonnet 5.5, an AI assistant made by
+> [Anthropic](https://www.anthropic.com)), working with the repo owner. See [Credits](#credits).
+
 ## What you need
 
 - **Windows, macOS or Linux** (the quick-start below is for Windows)
@@ -100,6 +104,19 @@ Medal stores a project as `project.json` (a timeline of layers and clips) plus t
 named by hash. Each clip is shown on the timeline from `startTime + leftTrim` to
 `startTime + duration - rightTrim`, playing the source from `leftTrim`. The tool turns that into
 one ffmpeg filter graph and renders it.
+
+## Credits
+
+- **Written by Claude** (Claude Sonnet 5.5, Anthropic): worked out Medal's `project.json` format
+  from sample files, wrote the renderer, the helper script and this documentation, and tested
+  the output (timeline, frames and audio levels) against the sample project.
+- **Idea, project files and testing context** from the repo owner, who ran into Medal's broken
+  render button and supplied the sample project the tool was built from.
+- Rendering is done by [ffmpeg](https://ffmpeg.org).
+
+Because the code is AI-generated and was only checked against one project saved by Medal editor
+1.15.14, please check your result against Medal's preview and report problems in an issue.
+This is not an official Anthropic product.
 
 ## License
 
